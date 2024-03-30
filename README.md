@@ -24,7 +24,7 @@ Testing the C Program for the desired output.
 # PROGRAM:
 
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
-```
+
 #include<stdlib.h>
 #include<sys/types.h> 
 #include<sys/stat.h> 
@@ -79,7 +79,7 @@ n=read(rfd,buff,2000);
 buff[n]='\0';
 printf("THE RESULTS OF CLIENTS ARE ...... \n"); write(1,buff,n);
 }
-```
+
 ## OUTPUT
 ![Exno 4 a](https://github.com/ramya23000505/Linux-IPC-Pipes/assets/149370791/8fc229bf-4b71-4e63-9dea-d7464fcbe975)
 
