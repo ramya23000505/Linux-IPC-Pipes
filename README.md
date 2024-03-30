@@ -18,13 +18,10 @@ Navigate to any Linux environment installed on the system or installed inside a 
 Write the C Program using Linux Process API - pipe(), fifo()
 
 ### Step 3:
-
 Testing the C Program for the desired output. 
-
 # PROGRAM:
-
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
-
+```
 #include<stdlib.h>
 #include<sys/types.h> 
 #include<sys/stat.h> 
@@ -51,7 +48,6 @@ client(p1[1],p2[0]);
 wait(waits); 
 return 0; 
 } 
-
 void server(int rfd,int wfd) 
 { 
 int i,j,n; 
@@ -79,7 +75,7 @@ n=read(rfd,buff,2000);
 buff[n]='\0';
 printf("THE RESULTS OF CLIENTS ARE ...... \n"); write(1,buff,n);
 }
-
+```
 ## OUTPUT
 ![Exno 4 a](https://github.com/ramya23000505/Linux-IPC-Pipes/assets/149370791/8fc229bf-4b71-4e63-9dea-d7464fcbe975)
 
